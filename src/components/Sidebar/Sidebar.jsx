@@ -1,9 +1,17 @@
 import React from 'react'
 import './sidebar.css'
+import Logo from '../../imgs/logo.png'
 
 const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <div className="Sidebar">
+      <div className="logo">
+        <img src={ Logo } alt="" />
+        <span>
+          Sh<span> o </span>ps
+        </span>
+      </div>
+    </div>
   )
 }
 
