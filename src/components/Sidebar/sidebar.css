@@ -13,4 +13,9 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    height: 4%;
+}
+
+.logo>img{
+    width: 3rem;
 }
