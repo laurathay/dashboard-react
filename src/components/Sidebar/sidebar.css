@@ -18,4 +18,9 @@
 
 .logo>img{
     width: 3rem;
+    height: 3rem;
+}
+
+.logo>span>span {
+    color: var(--pink);
 }
