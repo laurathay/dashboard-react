@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@iconscout/react-unicons", "virtual:f4aa259a6f2184a024d79290a30cd58b1f00aaee95adcb17ed2426bb52093c631edc9e966ae5adc83c243ebaaf9da5a6def77b0a32bc29179a6a329a36e03c66#npm:1.1.6"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:f4aa259a6f2184a024d79290a30cd58b1f00aaee95adcb17ed2426bb52093c631edc9e966ae5adc83c243ebaaf9da5a6def77b0a32bc29179a6a329a36e03c66#npm:13.2.0"],\
             ["@testing-library/user-event", "virtual:f4aa259a6f2184a024d79290a30cd58b1f00aaee95adcb17ed2426bb52093c631edc9e966ae5adc83c243ebaaf9da5a6def77b0a32bc29179a6a329a36e03c66#npm:13.5.0"],\
@@ -3076,6 +3077,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@humanwhocodes-object-schema-npm-1.2.1-eb622b5d0e-a824a1ec31.zip/node_modules/@humanwhocodes/object-schema/",\
           "packageDependencies": [\
             ["@humanwhocodes/object-schema", "npm:1.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@iconscout/react-unicons", [\
+        ["npm:1.1.6", {\
+          "packageLocation": "./.yarn/cache/@iconscout-react-unicons-npm-1.1.6-d0e7c96bff-a9710b748d.zip/node_modules/@iconscout/react-unicons/",\
+          "packageDependencies": [\
+            ["@iconscout/react-unicons", "npm:1.1.6"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:f4aa259a6f2184a024d79290a30cd58b1f00aaee95adcb17ed2426bb52093c631edc9e966ae5adc83c243ebaaf9da5a6def77b0a32bc29179a6a329a36e03c66#npm:1.1.6", {\
+          "packageLocation": "./.yarn/__virtual__/@iconscout-react-unicons-virtual-79f48b0970/0/cache/@iconscout-react-unicons-npm-1.1.6-d0e7c96bff-a9710b748d.zip/node_modules/@iconscout/react-unicons/",\
+          "packageDependencies": [\
+            ["@iconscout/react-unicons", "virtual:f4aa259a6f2184a024d79290a30cd58b1f00aaee95adcb17ed2426bb52093c631edc9e966ae5adc83c243ebaaf9da5a6def77b0a32bc29179a6a329a36e03c66#npm:1.1.6"],\
+            ["@types/react", null],\
+            ["react", "npm:18.1.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6950,6 +6973,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["dashboard-react", "workspace:."],\
+            ["@iconscout/react-unicons", "virtual:f4aa259a6f2184a024d79290a30cd58b1f00aaee95adcb17ed2426bb52093c631edc9e966ae5adc83c243ebaaf9da5a6def77b0a32bc29179a6a329a36e03c66#npm:1.1.6"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:f4aa259a6f2184a024d79290a30cd58b1f00aaee95adcb17ed2426bb52093c631edc9e966ae5adc83c243ebaaf9da5a6def77b0a32bc29179a6a329a36e03c66#npm:13.2.0"],\
             ["@testing-library/user-event", "virtual:f4aa259a6f2184a024d79290a30cd58b1f00aaee95adcb17ed2426bb52093c631edc9e966ae5adc83c243ebaaf9da5a6def77b0a32bc29179a6a329a36e03c66#npm:13.5.0"],\

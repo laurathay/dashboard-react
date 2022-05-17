@@ -2,14 +2,31 @@ import React from 'react'
 import './sidebar.css'
 import Logo from '../../imgs/logo.png'
 
+import { SidebarData } from "../../Data/Data";
+
 const Sidebar = () => {
   return (
     <div className="Sidebar">
+      {/* logo */}
       <div className="logo">
         <img src={ Logo } alt="" />
         <span>
-          Sh<span> o </span>ps
+          Sh<span>o</span>ps
         </span>
+      </div>
+
+      {/* menu */}
+      <div className="menu">
+        {Sidebar.map((item, index)=>{
+          return (
+            <div className="menuItem">
+              <div>
+                { UilEstate }
+              </div>
+              <span>Dashboard</span>
+            </div>
+          )
+        })}
       </div>
     </div>
   )

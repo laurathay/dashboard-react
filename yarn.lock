@@ -1647,6 +1647,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@iconscout/react-unicons@npm:^1.1.6":
+  version: 1.1.6
+  resolution: "@iconscout/react-unicons@npm:1.1.6"
+  dependencies:
+    react: ">=15.0.0 <17.0.0"
+  peerDependencies:
+    react: ">=15.0.0 <17.0.0"
+  checksum: a9710b748d0e033c1e56c19c4fe73540f478a646c83404aa43f317521312b99040084fa42f1f11d082b8ed4396c3ca812a9dd45e09b38e7d5d83f618f404077b
+  languageName: node
+  linkType: hard
+
 "@istanbuljs/load-nyc-config@npm:^1.0.0":
   version: 1.1.0
   resolution: "@istanbuljs/load-nyc-config@npm:1.1.0"
@@ -4709,6 +4720,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dashboard-react@workspace:."
   dependencies:
+    "@iconscout/react-unicons": ^1.1.6
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^13.0.0
     "@testing-library/user-event": ^13.2.1
@@ -9896,7 +9908,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -10155,6 +10167,17 @@ __metadata:
   bin:
     react-scripts: bin/react-scripts.js
   checksum: 92afa2f245c7092ccc97d5609dc7a2130616262e34da7f15072d9442e2d2e1d4909a91022abd1faac1336eb17c5525a10d9bd43e1ae374c7ec941ca20addca68
+  languageName: node
+  linkType: hard
+
+"react@npm:>=15.0.0 <17.0.0":
+  version: 16.14.0
+  resolution: "react@npm:16.14.0"
+  dependencies:
+    loose-envify: ^1.1.0
+    object-assign: ^4.1.1
+    prop-types: ^15.6.2
+  checksum: 8484f3ecb13414526f2a7412190575fc134da785c02695eb92bb6028c930bfe1c238d7be2a125088fec663cc7cda0a3623373c46807cf2c281f49c34b79881ac
   languageName: node
   linkType: hard
 
