@@ -3,9 +3,8 @@ import {
     UilClipboardAlt,
     UilUsersAlt,
     UilPackage,
-    UilChart,
-    UilSignOutAlt,
-} from '@iconscout/react-unicons/icons/reat-unicons';
+    UilChart
+} from '@iconscout/reat-unicons';
 
 import UilReact from '@iconscout/react-unicons/icons/uil-react'
 
