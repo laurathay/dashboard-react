@@ -1,36 +1,28 @@
-import {
-    UilEstate,
-    UilClipboardAlt,
-    UilUsersAlt,
-    UilPackage,
-    UilChart
-} from '@iconscout/reat-unicons';
-
-import UilReact from '@iconscout/react-unicons/icons/uil-react'
+import { MdOutlineDashboard} from 'react-icons/md';
 
 export const Data = [
     {
-        icon: UilEstate,
+        icon: MdOutlineDashboard,
         heading: "Dashboard",
-    },
-    {
-        icon: UilClipboardAlt,
-        heading: "Orders",
-    },
-    {
-        icon: UilUsersAlt,
-        heading: "Customers",
-    },
-    {
-        icon: UilPackage,
-        heading: "Products",
-    },
-    {
-        icon: UilChart,
-        heading: "Analytics",
-    },
-    {
-        icon: UilReact,
-        heading: "Analytics",
-    },
+    }
+    // {
+    //     icon: ,
+    //     heading: "Orders",
+    // },
+    // {
+    //     icon:,
+    //     heading: "Customers",
+    // },
+    // {
+    //     icon: ,
+    //     heading: "Products",
+    // },
+    // {
+    //     icon:,
+    //     heading: "Analytics",
+    // },
+    // {
+    //     icon:,
+    //     heading: "Analytics",
+    // },
 ];

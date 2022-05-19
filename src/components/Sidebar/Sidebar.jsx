@@ -2,7 +2,9 @@ import React from 'react'
 import './sidebar.css'
 import Logo from '../../imgs/logo.png'
 
-import { SidebarData } from "../../Data/Data";
+import { MdOutlineDashboard} from 'react-icons/md';
+
+// import { Data } from "../../Data/Data";
 
 const Sidebar = () => {
   return (
@@ -17,16 +19,12 @@ const Sidebar = () => {
 
       {/* menu */}
       <div className="menu">
-        {Sidebar.map((item, index)=>{
-          return (
             <div className="menuItem">
               <div>
-                { UilEstate }
+                < MdOutlineDashboard />
               </div>
               <span>Dashboard</span>
             </div>
-          )
-        })}
       </div>
     </div>
   )
