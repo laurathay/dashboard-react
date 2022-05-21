@@ -25,6 +25,13 @@ const Sidebar = () => {
               </div>
               <span>Dashboard</span>
             </div>
+
+            <div className="menuItem">
+              <div>
+                < MdOutlineDashboard />
+              </div>
+              <span>Dashboard</span>
+            </div>
       </div>
     </div>
   )
