@@ -1,28 +1,29 @@
 import { MdOutlineDashboard} from 'react-icons/md';
+import { HiOutlineClipboardList } from 'react-icons/hi';
+import { FiUsers } from 'react-icons/fi';
+import { FiPackage, FiPieChart  } from 'react-icons/fi';
 
-export const Data = [
+export const SidebarData = [
     {
         icon: MdOutlineDashboard,
         heading: "Dashboard",
+    },
+    {
+        icon: HiOutlineClipboardList,
+        heading: "Orders",
+    },
+    {
+        icon: FiUsers,
+        heading: "Customers",
+    },
+    {
+        icon: FiPackage ,
+        heading: "Products",
+    },
+    {
+        icon: FiPieChart,
+        heading: "Analytics",
     }
-    // {
-    //     icon: ,
-    //     heading: "Orders",
-    // },
-    // {
-    //     icon:,
-    //     heading: "Customers",
-    // },
-    // {
-    //     icon: ,
-    //     heading: "Products",
-    // },
-    // {
-    //     icon:,
-    //     heading: "Analytics",
-    // },
-    // {
-    //     icon:,
-    //     heading: "Analytics",
-    // },
 ];
+
+export default SidebarData
