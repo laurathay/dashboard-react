@@ -3,7 +3,9 @@ import './sidebar.css'
 import Logo from '../../imgs/logo.png'
 
 import { MdOutlineDashboard} from 'react-icons/md';
-
+import { HiOutlineClipboardList } from 'react-icons/hi';
+import { FiUsers } from 'react-icons/fi';
+import { FiPackage, FiPieChart  } from 'react-icons/fi';
 // import { Data } from "../../Data/Data";
 
 const Sidebar = () => {
@@ -28,9 +30,30 @@ const Sidebar = () => {
 
             <div className="menuItem">
               <div>
-                < MdOutlineDashboard />
+                < HiOutlineClipboardList />
               </div>
-              <span>Dashboard</span>
+              <span> Orders</span>
+            </div>
+
+            <div className="menuItem">
+              <div>
+                < FiUsers />
+              </div>
+              <span> Users</span>
+            </div>
+
+            <div className="menuItem">
+              <div>
+                < FiPackage />
+              </div>
+              <span> Products </span>
+            </div>
+
+            <div className="menuItem">
+              <div>
+                < FiPieChart />
+              </div>
+              <span> Analytics </span>
             </div>
       </div>
     </div>
