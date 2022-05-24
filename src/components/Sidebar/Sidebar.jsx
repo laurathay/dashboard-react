@@ -23,14 +23,16 @@ const Sidebar = () => {
       <div className="menu">
             {SidebarData.map((item, index)=>{
               return(
-                  <div className="menuItem">
-                    <item.icon/>
+                  <div className="menuItem active">
+                    <div className="icon">
+                    <item.icon />
+                    <div/>
                     <span>
                       {item.heading}
                     </span>
                   </div>
               )
-            })}
+            }
             <div className="menuItem">
               <FaSignOutAlt />
             </div>

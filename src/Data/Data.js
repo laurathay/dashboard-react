@@ -1,7 +1,6 @@
 import { MdOutlineDashboard} from 'react-icons/md';
 import { HiOutlineClipboardList } from 'react-icons/hi';
-import { FiUsers } from 'react-icons/fi';
-import { FiPackage, FiPieChart  } from 'react-icons/fi';
+import {  FiUsers, FiPackage, FiPieChart  } from 'react-icons/fi';
 
 export const SidebarData = [
     {
