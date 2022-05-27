@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './sidebar.css'
-import Logo from '../../imgs/logo.png'
+import Logo from '../../imgs/logo.png';
+//check
 
 import SidebarData from '../../Data/Data';
 import { FaSignOutAlt } from 'react-icons/fa';
