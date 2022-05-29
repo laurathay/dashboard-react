@@ -1,6 +1,9 @@
 import { MdOutlineDashboard} from 'react-icons/md';
 import { HiOutlineClipboardList } from 'react-icons/hi';
 import {  FiUsers, FiPackage, FiPieChart  } from 'react-icons/fi';
+import { BsClipboardData }from 'react-icons/bs';
+import { GiReceiveMoney } from 'react-icons/gi';
+import { GrMoney } from 'react-icons/gr';
 
 export const SidebarData = [
     {
@@ -33,8 +36,8 @@ export const CardsData = [
             boxShadow: "0px 10px 20px 0px #e0c6f5",
         },
         barValue: 70,
-        value "25, 970",
-        png: UilUsdSquare,
+        value: "25, 970",
+        png: GrMoney,
         series: [
             {
                 name: "Sales",
@@ -49,8 +52,8 @@ export const CardsData = [
             boxShadow: "0px 10px 20px 0px #fdc0c7",
         },
         barValue: 80,
-        value "14, 270",
-        png: UilMoneyWithdrawal,
+        value: "14, 270",
+        png: GiReceiveMoney,
         series: [
             {
                 name: "Revenues",
@@ -66,8 +69,8 @@ export const CardsData = [
             boxShadow: "0px 10px 20px 0px #f9d59b",
         },
         barValue: 60,
-        value "4, 270",
-        png: UilClipboardAlt,
+        value: "4, 270",
+        png: BsClipboardData,
         series: [
             {
                 name: "Expenses",
@@ -77,4 +80,5 @@ export const CardsData = [
     } 
 ]
 
-export default SidebarData
+//export default SidebarData;
+export default CardsData
