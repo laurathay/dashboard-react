@@ -6,8 +6,6 @@ import Logo from '../../imgs/logo.png';
 import SidebarData from '../../Data/Data';
 import { FaSignOutAlt } from 'react-icons/fa';
 
-// import { Data } from "../../Data/Data";
-
 const Sidebar = () => {
 
   const [selected, setSelected] = useState(0)

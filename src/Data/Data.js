@@ -28,6 +28,8 @@ export const SidebarData = [
     }
 ];
 
+export default SidebarData
+
 export const CardsData = [
     {
         title: "Sales",
@@ -80,5 +82,3 @@ export const CardsData = [
     } 
 ]
 
-//export default SidebarData;
-export default CardsData
