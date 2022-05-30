@@ -4765,6 +4765,7 @@ __metadata:
     "@testing-library/user-event": ^13.2.1
     framer-motion: ^6.3.4
     react: ^18.1.0
+    react-circular-progressbar: ^2.0.4
     react-dom: ^18.1.0
     react-icons: ^4.3.1
     react-scripts: 5.0.1
@@ -10104,6 +10105,15 @@ __metadata:
     regenerator-runtime: ^0.13.9
     whatwg-fetch: ^3.6.2
   checksum: 1bb031080af15397d6eb9c69a0c2e93799991f7197a086e4409ba719398f1256b542a3d6c9a34673d516c684eef3e8226c99b335982593851f58f65f6e43571b
+  languageName: node
+  linkType: hard
+
+"react-circular-progressbar@npm:^2.0.4":
+  version: 2.0.4
+  resolution: "react-circular-progressbar@npm:2.0.4"
+  peerDependencies:
+    react: ^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
+  checksum: c9b550e81027c2ebffe8eedc44570cf016731939df9bdb0647d24d5f6b6a97ea70347b73a0e5141ee123ef448bf0df9621c2d30f73d63f6b87f5e304e21035d5
   languageName: node
   linkType: hard
 
