@@ -30,8 +30,8 @@ function CompactCard({param}) {
     return(
         <div className="CompactCard"
         style={{
-            background : param.background,
-            boxShadow : param.boxShadow
+            background : param.color.backGround,
+            boxShadow : param.color.boxShadow
         }}
         >
             <div className="radialBar">
@@ -39,6 +39,7 @@ function CompactCard({param}) {
                 value={param.barValue}
                 text={`${param.barValue}%`}
                 />
+                <span>{param.title}</span>
             </div>
             <div className="detail">
                 <Png />
