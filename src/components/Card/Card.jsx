@@ -5,9 +5,12 @@ import { AnimateSharedLayout } from 'framer-motion'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
+import { AiOutlineCloseCircle } from 'react-icons/ai';
+import Chart from 'apexcharts';
+
 const Card = (props) => {
 
-    const [expanded, setExpanded] = useState(false)
+    const [expanded, setExpanded] = useState(false);
 
   return (
    <AnimateSharedLayout>
@@ -54,6 +57,63 @@ function CompactCard({param, setExpanded}) {
 // ExpandedCard
 
 function ExpandedCard({param, setExpanded}){
+
+    const data = {
+        options: {
+            chart: {
+                type: "area",
+                height: "auto",
+            },
+
+            dropShadow: {
+                enabled: false,
+                enabledOnSeries: undefined,
+                top: 0,
+                left: 0,
+                blur: 3,
+                color: "#000",
+                opacity: 0.35,
+            },
+
+            fill: {
+                colors: ['#fff'],
+                type: "gradient",
+            },
+
+            dataLabels: {
+                enabled: false,
+            },
+
+            stroke: {
+                curve: "smooth",
+                colors: ["white"],
+            },
+
+            tooltip: {
+                x: {
+                    format: "dd/MM/yy HH:mm",
+                },
+            },
+            
+            grid: {
+                show: true,
+            },
+
+            xaxis: {
+                type: "datetime",
+                categories: [
+                    "2022-09-19T00:00:000Z",
+                    "2022-09-19T01:30:000Z",
+                    "2022-09-19T02:30:000Z",
+                    "2022-09-19T03:30:000Z",
+                    "2022-09-19T04:30:000Z",
+                    "2022-09-19T05:30:000Z",
+                    "2022-09-19T06:30:000Z",
+                ],
+            },
+        },
+    };
+
     return(
         <div className="ExpandedCard"
         style={{
@@ -61,7 +121,14 @@ function ExpandedCard({param, setExpanded}){
             boxShadow: param.color.boxShadow,
         }}
         >
-
+        <div>
+            <AiOutlineCloseCircle onClick={setExpanded}/>
+        </div>
+        <span>{param.title}</span>
+        <div className="chartContainer">
+            <Chart series={param.series} type='area' options={data.options}/>
+        </div>
+        <span>Last 24 hours</span>
         </div>
     )
 }
