@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './Card.css';
 
-import { AnimateSharedLayout } from 'framer-motion'
+import { motion, AnimateSharedLayout } from 'framer-motion'
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import Chart from 'apexcharts';
+import Chart from 'react-apexcharts';
 
 const Card = (props) => {
 
@@ -31,12 +31,13 @@ const Card = (props) => {
 function CompactCard({param, setExpanded}) {
     const Png = param.png;
     return(
-        <div className="CompactCard"
+        <motion.div className="CompactCard"
         style={{
             background : param.color.backGround,
             boxShadow : param.color.boxShadow
         }}
         onClick={setExpanded}
+        layout='expandableCard'
         >
             <div className="radialBar">
                 <CircularProgressbar
@@ -50,7 +51,7 @@ function CompactCard({param, setExpanded}) {
                 <span>${param.value}</span>
                 <span>Last 24 hours</span>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
@@ -115,11 +116,13 @@ function ExpandedCard({param, setExpanded}){
     };
 
     return(
-        <div className="ExpandedCard"
+        <motion.div className="ExpandedCard"
         style={{
             background: param.color.backGround,
             boxShadow: param.color.boxShadow,
         }}
+
+        layout='expandableCard'
         >
         <div>
             <AiOutlineCloseCircle onClick={setExpanded}/>
@@ -129,7 +132,7 @@ function ExpandedCard({param, setExpanded}){
             <Chart series={param.series} type='area' options={data.options}/>
         </div>
         <span>Last 24 hours</span>
-        </div>
+        </motion.div>
     )
 }
 export default Card
