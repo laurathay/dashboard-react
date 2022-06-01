@@ -12,10 +12,10 @@ const Card = (props) => {
   return (
    <AnimateSharedLayout>
        {
-           expanded? (
-               'Expanded'
-           ):
-           <CompactCard param = {props}/>
+           expanded? 
+               <ExpandedCard param={props} setExpanded={()=>setExpanded(false)}/>:
+           <CompactCard param = {props} setExpanded={() =>setExpanded(true)}/>
+           
        }
 
    </ AnimateSharedLayout>
@@ -25,7 +25,7 @@ const Card = (props) => {
 
 
 //CompactCard
-function CompactCard({param}) {
+function CompactCard({param, setExpanded}) {
     const Png = param.png;
     return(
         <div className="CompactCard"
@@ -33,6 +33,7 @@ function CompactCard({param}) {
             background : param.color.backGround,
             boxShadow : param.color.boxShadow
         }}
+        onClick={setExpanded}
         >
             <div className="radialBar">
                 <CircularProgressbar
@@ -46,6 +47,21 @@ function CompactCard({param}) {
                 <span>${param.value}</span>
                 <span>Last 24 hours</span>
             </div>
+        </div>
+    )
+}
+
+// ExpandedCard
+
+function ExpandedCard({param, setExpanded}){
+    return(
+        <div className="ExpandedCard"
+        style={{
+            background: param.color.backGround,
+            boxShadow: param.color.boxShadow,
+        }}
+        >
+
         </div>
     )
 }
