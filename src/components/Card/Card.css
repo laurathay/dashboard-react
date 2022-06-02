@@ -78,3 +78,19 @@
     justify-content: space-between;
     padding: 1rem;
 }
+
+.ExpandedCard > span:nth-child(1) {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px white;
+}
+
+.ExpandedCard > span:nth-child(2) {
+    color: rgba(233, 222, 222);
+    font-size: 16px;
+}
+
+.chartContainer {
+    width: 70%;
+}
