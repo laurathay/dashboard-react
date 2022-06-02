@@ -1,48 +1,46 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import './Card.css';
 
-import { motion, AnimateSharedLayout } from 'framer-motion'
+import { motion, AnimateSharedLayout } from 'framer-motion';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import Chart from 'react-apexcharts';
+import Chart from 'apexcharts';
 
 const Card = (props) => {
-
     const [expanded, setExpanded] = useState(false);
 
   return (
    <AnimateSharedLayout>
-       {
-           expanded? 
-               <ExpandedCard param={props} setExpanded={()=>setExpanded(false)}/>:
+       {expanded ? ( 
+               <ExpandedCard param={props} setExpanded={() => setExpanded(false)} />
+        ) : (
            <CompactCard param = {props} setExpanded={() =>setExpanded(true)}/>
            
-       }
-
+        )}
    </ AnimateSharedLayout>
-
-  )
-}
+  );
+};
 
 
 //CompactCard
 function CompactCard({param, setExpanded}) {
     const Png = param.png;
     return(
-        <motion.div className="CompactCard"
+        <motion.div 
+        className="CompactCard"
         style={{
-            background : param.color.backGround,
-            boxShadow : param.color.boxShadow
+            background: param.color.backGround,
+            boxShadow: param.color.boxShadow,
         }}
         onClick={setExpanded}
-        layout='expandableCard'
+        layoutId='expandableCard'
         >
             <div className="radialBar">
                 <CircularProgressbar
-                value={param.barValue}
-                text={`${param.barValue}%`}
+                    value={param.barValue}
+                    text={`${param.barValue}%`}
                 />
                 <span>{param.title}</span>
             </div>
@@ -57,7 +55,7 @@ function CompactCard({param, setExpanded}) {
 
 // ExpandedCard
 
-function ExpandedCard({param, setExpanded}){
+function ExpandedCard({ param, setExpanded }) {
 
     const data = {
         options: {
@@ -112,8 +110,8 @@ function ExpandedCard({param, setExpanded}){
                     "2022-09-19T06:30:000Z",
                 ],
             },
-        },
-    };
+    },
+    }
 
     return(
         <motion.div className="ExpandedCard"
@@ -122,7 +120,7 @@ function ExpandedCard({param, setExpanded}){
             boxShadow: param.color.boxShadow,
         }}
 
-        layout='expandableCard'
+        layoutId='expandableCard'
         >
         <div>
             <AiOutlineCloseCircle onClick={setExpanded}/>
