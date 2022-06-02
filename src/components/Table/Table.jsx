@@ -6,38 +6,39 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import './Table.css';
 
 function createData(
   name: string,
-  calories: number,
-  fat: number,
-  carbs: number,
-  protein: number,
+  email: string,
+  score: number,
+  comments: string,
 ) {
-  return { name, calories, fat, carbs, protein };
+  return { name, email, score, comments };
 }
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
+  createData('Lynch Cai', 'l_cai@hetic.eu', 20, 'A'),
+  createData('Mehdi Verfaillie', 'm_verfaillie@hetic.eu', 20, 'B'),
+  createData('Laura THAY', 'l_thay@hetic.eu', 20, 'C'),
+  createData('Vincent Li', 'v_li@hetic.eu', 20,'X'),
+  createData('Yeonsoo', 'yeongsoo@hetic.eu', 20,'Y'),
 ];
 
 export default function BasicTable() {
   return (
       <div className="Table">
-          <h3> Recent Orders </h3>
-            <TableContainer component={Paper}>
+          <h3> Recent Scores </h3>
+            <TableContainer component={Paper}
+            style={{boxShadow: '0px 13px 20px 0px #80808029'}}
+            >
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
                 <TableHead>
                 <TableRow>
-                    <TableCell>Dessert (100g serving)</TableCell>
-                    <TableCell align="left">Calories</TableCell>
-                    <TableCell align="left">Fat&nbsp;(g)</TableCell>
-                    <TableCell align="left">Carbs&nbsp;(g)</TableCell>
-                    <TableCell align="left">Protein&nbsp;(g)</TableCell>
+                    <TableCell>Peeps</TableCell>
+                    <TableCell align="left">email</TableCell>
+                    <TableCell align="left">score</TableCell>
+                    <TableCell align="left">comments</TableCell>
                 </TableRow>
                 </TableHead>
                 <TableBody>
@@ -49,10 +50,9 @@ export default function BasicTable() {
                     <TableCell component="th" scope="row">
                         {row.name}
                     </TableCell>
-                    <TableCell align="left">{row.calories}</TableCell>
-                    <TableCell align="left">{row.fat}</TableCell>
-                    <TableCell align="left">{row.carbs}</TableCell>
-                    <TableCell align="left">{row.protein}</TableCell>
+                    <TableCell align="left">{row.email}</TableCell>
+                    <TableCell align="left" class="score">{row.score}</TableCell>
+                    <TableCell align="left">{row.comments}</TableCell>
                     </TableRow>
                 ))}
                 </TableBody>

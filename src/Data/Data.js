@@ -12,19 +12,19 @@ export const SidebarData = [
     },
     {
         icon: HiOutlineClipboardList,
-        heading: "Orders",
+        heading: "Challenge 1",
     },
     {
         icon: FiUsers,
-        heading: "Customers",
+        heading: "Challenge 2",
     },
     {
         icon: FiPackage ,
-        heading: "Products",
+        heading: "Challenge 3",
     },
     {
         icon: FiPieChart,
-        heading: "Analytics",
+        heading: "Challenge 4",
     }
 ];
 
@@ -32,23 +32,23 @@ export default SidebarData
 
 export const CardsData = [
     {
-        title: "Sales",
+        title: "Promo 1",
         color: {
             backGround: "linear-gradient(180deg, #bb67ff 0%, #c484f3 100%",
             boxShadow: "0px 10px 20px 0px #e0c6f5",
         },
         barValue: 70,
-        value: "25, 970",
+        value: "20",
         png: GrMoney,
         series: [
             {
-                name: "Sales",
+                name: "Promo 1",
                 data: [31, 40, 28, 51, 42, 109, 100],
             },
         ],   
     },  
     {
-        title: "Revenue",
+        title: "Promo 2",
         color: {
             backGround: "linear-gradient(180deg, #bb67ff 0%, #fc929d 100%",
             boxShadow: "0px 10px 20px 0px #fdc0c7",
@@ -58,24 +58,24 @@ export const CardsData = [
         png: GiReceiveMoney,
         series: [
             {
-                name: "Revenues",
+                name: "Promo 2",
                 data: [10, 100, 50, 70, 80, 30, 40],
             },
         ],   
     },
     {
-        title: "Expenses",
+        title: "Promo 3",
         color: {
             backGround: 
                 "linear-gradient(rgba(248, 212, 154) -146.42%, rgba(255 202 113) -46.42%)",
             boxShadow: "0px 10px 20px 0px #f9d59b",
         },
         barValue: 60,
-        value: "4, 270",
+        value: "42",
         png: BsClipboardData,
         series: [
             {
-                name: "Expenses",
+                name: "Promo 3",
                 data: [10, 25, 15, 30, 12, 15, 20],
             },
         ],   
