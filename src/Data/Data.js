@@ -3,7 +3,9 @@ import { HiOutlineClipboardList } from 'react-icons/hi';
 import {  FiUsers, FiPackage, FiPieChart  } from 'react-icons/fi';
 import { BsClipboardData }from 'react-icons/bs';
 import { GiReceiveMoney } from 'react-icons/gi';
-import { GrMoney } from 'react-icons/gr';
+// import { GrMoney } from 'react-icons/gr';
+
+import { BsPeople } from 'react-icons/bs';
 
 import img1 from '../imgs/img1.png';
 import img2 from '../imgs/img2.png';
@@ -43,7 +45,7 @@ export const CardsData = [
         },
         barValue: 70,
         value: "20",
-        png: GrMoney,
+        png: BsPeople,
         series: [
             {
                 name: "Promo 1",

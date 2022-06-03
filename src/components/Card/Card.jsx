@@ -46,7 +46,7 @@ function CompactCard({param, setExpanded}) {
             </div>
             <div className="detail">
                 <Png />
-                <span>${param.value}</span>
+                <span>score: {param.value}</span>
                 <span>Last semester</span>
             </div>
         </motion.div>
