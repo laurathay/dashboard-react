@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './sidebar.css'
-import Logo from '../../imgs/logo.png';
+import Logo from '../../imgs/logo2.png';
 //check
 
 import SidebarData from '../../Data/Data';
@@ -14,9 +14,9 @@ const Sidebar = () => {
     <div className="Sidebar">
       {/* logo */}
       <div className="logo">
-        <img src={ Logo } alt="" />
+        <img className="logo2" src={ Logo } alt="" />
         <span>
-          Sh<span>o</span>ps
+          Ch<span>a</span>llenges
         </span>
       </div>
 

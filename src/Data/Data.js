@@ -5,6 +5,10 @@ import { BsClipboardData }from 'react-icons/bs';
 import { GiReceiveMoney } from 'react-icons/gi';
 import { GrMoney } from 'react-icons/gr';
 
+import img1 from '../imgs/img1.png';
+import img2 from '../imgs/img2.png';
+import img3 from '../imgs/img3.png';
+
 export const SidebarData = [
     {
         icon: MdOutlineDashboard,
@@ -82,3 +86,23 @@ export const CardsData = [
     } 
 ]
 
+export const UpdatesData = [
+    {
+        img: img1,
+        name: "Lynch Cai",
+        noti: "didn't eat",
+        score: "20",
+    },
+    {
+        img: img2,
+        name: "Vincent Ly",
+        noti: "didn't pay",
+        score: "10",
+    },
+    {
+        img: img3,
+        name: "Mehdi Verfaillie",
+        noti: "didn't go",
+        score: "5",
+    },
+];
