@@ -1,8 +1,8 @@
 import { MdOutlineDashboard} from 'react-icons/md';
 import { HiOutlineClipboardList } from 'react-icons/hi';
 import {  FiUsers, FiPackage, FiPieChart  } from 'react-icons/fi';
-import { BsClipboardData }from 'react-icons/bs';
-import { GiReceiveMoney } from 'react-icons/gi';
+// import { BsClipboardData }from 'react-icons/bs';
+// import { GiReceiveMoney } from 'react-icons/gi';
 // import { GrMoney } from 'react-icons/gr';
 
 import { BsPeople } from 'react-icons/bs';
@@ -60,8 +60,8 @@ export const CardsData = [
             boxShadow: "0px 10px 20px 0px #fdc0c7",
         },
         barValue: 80,
-        value: "14, 270",
-        png: GiReceiveMoney,
+        value: "14",
+        png: BsPeople,
         series: [
             {
                 name: "Promo 2",
@@ -78,10 +78,28 @@ export const CardsData = [
         },
         barValue: 60,
         value: "42",
-        png: BsClipboardData,
+        png: BsPeople,
         series: [
             {
                 name: "Promo 3",
+                data: [10, 25, 15, 30, 12, 15, 20],
+            },
+        ],   
+    }, 
+    {
+        title: "Add Promo",
+        color: {
+            backGround: 
+                "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)",
+            boxShadow: "0px 10px 20px 0px rgb(238,174,202)",
+            
+        },
+        barValue: 0,
+        value: "+",
+        png: BsPeople,
+        series: [
+            {
+                name: "Add Promo",
                 data: [10, 25, 15, 30, 12, 15, 20],
             },
         ],   
