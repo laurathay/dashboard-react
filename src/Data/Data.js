@@ -115,7 +115,7 @@ export const UpdatesData = [
     },
     {
         img: img2,
-        name: "Vincent Ly",
+        name: "Vincent Li",
         noti: "didn't pay",
         score: "10",
     },
